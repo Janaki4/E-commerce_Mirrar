@@ -28,7 +28,8 @@ Added DB schema design diagram in the project (name-> dbSchemaDesign).
 
 Left the .env file in the project itself for easily configure.
 
-Swagger documentation is also added.
+Swagger documentation is also added. 
+Swagger docs can we be acced at **http://localhost:8000/docs/#/**
 Added Postman collection (name-> Mirrar_e-commerce.postman_collection ) in the project.
 Testing is done with jest and supertest.
 
