@@ -46,5 +46,6 @@ Testing is done with jest and supertest
  for ex => _colour_ column data's is repeating , 
  we can split it into another table as **colourDetails** and use its primary key as foreign key in productVariant table
  Added schema design for space optimsed by splited the colour details table just for demo 
+ name of the file _schemaDesign_optimised_ in the project
     
     
