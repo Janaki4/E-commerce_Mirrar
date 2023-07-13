@@ -39,7 +39,6 @@ Testing is done with jest and supertest
     so , product's ID will be in productVariant table as a foreign key of product
     A product can have many variants
     And introduced **isDeleted** column in DB to achieve soft delete
-
     Another way to optimise the space in database , if any data's are repeating in variant details of products , 
     we can split it into another table and  use that primary key as foreign key in productVariant table to reduce space 
     for ex => _colour_ column data's is repeating , 
