@@ -9,15 +9,15 @@
 
 **To start the application**
 command=>
-**npm run dev** (to start in dev)
-**npm run start** (to start in production)
-**npm test** (to run testing)
+**npm run dev** (to start in dev),
+**npm run start** (to start in production),
+**npm test** (to run testing),
 
 
 **Project Structure**
-index.js is the main file
-API folder's having all the API's
-where service folder's having main business logic
+index.js is the main file,
+API folder's having all the API's,
+where service folder's having main business logic,
 
 DB Models are in Models folder
 DB folder having all the configurations of the database
@@ -27,9 +27,9 @@ Added DB schema design diagram in the project
 
 Left the .env file in the project itself for easily configure
 
-Swagger documentation is also added
-Added Postman collection (name-> Mirrar_e-commerce.postman_collection ) in the project
-Testing is done with jest and supertest
+Swagger documentation is also added,
+Added Postman collection (name-> Mirrar_e-commerce.postman_collection ) in the project,
+Testing is done with jest and supertest,
 
 
 **Assumptions:**
