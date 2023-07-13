@@ -23,12 +23,12 @@ DB Models are in Models folder
 DB folder having all the configurations of the database
 wrapper file having all the queries
 association file represents the relation between the models
-Added DB schema design diagram in the repo
+Added DB schema design diagram in the project
 
 Left the .env file in the project itself for easily configure
 
 Swagger documentation is also added
-Added Postman collection
+Added Postman collection (name-> Mirrar_e-commerce.postman_collection ) in the project
 Testing is done with jest and supertest
 
 
