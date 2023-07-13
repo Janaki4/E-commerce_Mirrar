@@ -2,9 +2,9 @@
 
 ***Tech-stack***
     **Node.js
-    express.js framework for server
-    Postgresql for database
-    Sequelise ORM
+    express.js framework for server ,
+    Postgresql for database ,
+    Sequelise ORM ,
     Jest , supertest for testing**
 
 **To start the application**
