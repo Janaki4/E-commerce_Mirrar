@@ -23,7 +23,7 @@ DB Models are in Models folder.
 DB folder having all the configurations of the database.
 Wrapper file having all the queries.
 Association file represents the relation between the models.
-Added DB schema design diagram in the project.
+Added DB schema design diagram in the project (name-> dbSchemaDesign).
 
 Left the .env file in the project itself for easily configure.
 
