@@ -18,6 +18,7 @@ command=>
 index.js is the main file.
 API folder's having all the API's.
 where service folder's having main business logic.
+Added _incoming payload validation_ using JOI library
 
 DB Models are in Models folder.
 DB folder having all the configurations of the database.
