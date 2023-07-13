@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "e32a81e9-3709-4337-bd38-7828aac9d074",
+		"name": "Mirrar_e-commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22576359",
+		"_collection_link": "https://restless-shuttle-368450.postman.co/workspace/New-Team-Workspace~8612d0cb-c1e5-4cec-87f1-ffc196f2c32c/collection/22576359-e32a81e9-3709-4337-bd38-7828aac9d074?action=share&creator=22576359&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Product details",
+			"item": [
+				{
+					"name": "create product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\":\"One plus 9r\",\r\n    \"description\":\"mobile phone\",\r\n    \"basePrice\":45000,\r\n    \"brandName\":\"ONE PLUS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/product/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all product details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/product/products/all?pageSize=10&pageNumber=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"product",
+								"products",
+								"all"
+							],
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "pageNumber",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single product details",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update product details",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/product/bb41233d-24f2-4ff8-9c71-1d14de333b61/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"product",
+								"bb41233d-24f2-4ff8-9c71-1d14de333b61",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete product details",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/product/bb41233d-24f2-4ff8-9c71-1d14de333b61/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"product",
+								"bb41233d-24f2-4ff8-9c71-1d14de333b61",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product variant details",
+			"item": [
+				{
+					"name": "add variant details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"variantName\":\"6 GB RAM, 128 GB ROM\",\r\n    \"additionalCost\":15,\r\n    \"SKU\":\"12416561\",\r\n    \"specification\":\"6 GB RAM, 128 GB ROM , snapdragon processor\",\r\n    \"stocksAvailable\":100,\r\n    \"productColor\":\"red\",\r\n    \"productDetailProductId\":\"bb41233d-24f2-4ff8-9c71-1d14de333b61\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/product/variant/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"product",
+								"variant",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single variant details",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update single product varaint details",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"variantName\":\"6 GB RAM, 128 GB ROM\",\r\n    \"additionalCost\":15,\r\n    \"specification\":\"6 GB RAM, 128 GB ROM , snapdragon processor\",\r\n    \"stocksAvailable\":100,\r\n    \"productColor\":\"blue\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/product/variant/7a5edeb2-a451-42ac-adbf-b219543664fe/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"product",
+								"variant",
+								"7a5edeb2-a451-42ac-adbf-b219543664fe",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete product variant details",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/product/variant/:variantid/single",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"product",
+								"variant",
+								":variantid",
+								"single"
+							],
+							"variable": [
+								{
+									"key": "variantid",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search product",
+			"item": [
+				{
+					"name": "Search product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/product/variant/search/one",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"product",
+								"variant",
+								"search",
+								"one"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
